@@ -1,14 +1,18 @@
-import { Button, TextInput, Alert } from 'react-native';
+import { TextInput } from 'react-native';
 
 import { styles } from './styles';
-
-export function BatTextInput() {
+interface IBatTextInput {
+    password: string;
+}
+export function BatTextInput(props: IBatTextInput) {
 
     return (
         <>
             <TextInput
                 style={styles.input}
                 placeholder="Password"
+                readOnly
+                value={props.password}
             />
 
         </>

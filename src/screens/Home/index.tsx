@@ -1,8 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { View } from 'react-native';
 import styles from './styles';
+
 import { BatLogo } from '../../components/BatLogo';
-import { BatTextInput } from '../../components/BatTextInput';
+import { BatButton } from '../../components/BatButton';
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
       </View>
 
       <View style={styles.inputContainer}>
-        <BatTextInput />
+        <BatButton />
       </View>
 
       <StatusBar style="light" />
