@@ -1,16 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import styles from './styles';
-import { Menu } from '../../components/Menu';
+import { BatLogo } from '../../components/BatLogo';
+import { BatTextInput } from '../../components/BatTextInput';
 
 const Home = () => {
-  return(
-    <View style={styles.container}>
-      <Menu />
-      <Text style={styles.text}>Bota uma cor ai caralho</Text>
-      <StatusBar style="auto" />
+  return (
+    <View style={styles.appContainer}>
+      <View style={styles.logoContainer}>
+        <BatLogo />
+      </View>
+
+      <View style={styles.inputContainer}>
+        <BatTextInput />
+      </View>
+
+      <StatusBar style="light" />
     </View>
-    )
+  )
 }
 
 export default Home;
